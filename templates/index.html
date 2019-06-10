@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Send greeting</title>
+    <style>
+      label {
+        display: block;
+      }
+
+      div {
+        margin-bottom: 20px;
+      }
+
+      input, textarea, button {
+        width: 100%;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Send greeting</h1>
+    <form method="POST" action="/send">
+      <div>
+        <label for="email">To:</label>
+        <input type="email" name="email" id="email" placeholder="example@mail.com">
+      </div>
+
+      <div>
+        <label for="message">Message:</label>
+        <textarea rows="10" name="message" id="message"></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
