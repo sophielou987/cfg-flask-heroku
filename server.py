@@ -14,5 +14,3 @@ def send():
   send_message(form_data["email"], form_data["message"])
 
   return "Greeting sent!"
-
-app.run(debug=True)
